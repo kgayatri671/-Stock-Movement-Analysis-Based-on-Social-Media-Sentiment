@@ -19,14 +19,10 @@ Yahoo Finance API: To fetch stock data for analysis and comparison.
 Matplotlib / Seaborn: For data visualization.
 Installation
 Clone the repository:
-
-bash
-Copy code
+https://github.com/kgayatri671/-Stock-Movement-Analysis-Based-on-Social-Media-Sentiment.git
 
 cd stock-movement-prediction-redditInstall dependencies:
 
-bash
-Copy code
 pip install -r requirements.txt
 Obtain Reddit API credentials:
 
@@ -38,18 +34,13 @@ REDDIT_SECRET
 REDDIT_USER_AGENT
 UsageScrape Reddit Data: Run the following script to collect posts from Reddit:
 
-bash
-Copy code
 python collect_reddit_data.py
 Perform Sentiment Analysis: After collecting data, run the script to analyze sentiment:
 
-bash
-Copy code
 python sentiment_analysis.py
 Train the Prediction Model: Build and train the stock prediction model:
 
-bash
-Copy code
+
 python train_model.py
 Make Predictions: To predict stock movements, run the prediction script with a stock symbol:
 
