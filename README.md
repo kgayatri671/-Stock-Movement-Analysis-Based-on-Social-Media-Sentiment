@@ -44,6 +44,40 @@ Train the Prediction Model: Build and train the stock prediction model:
 python train_model.py
 Make Predictions: To predict stock movements, run the prediction script with a stock symbol:
 
+
+Data Collection
+Reddit Scraping:
+
+Using the PRAW library, this project collects Reddit posts and comments from subreddits like r/wallstreetbets, r/investing, and r/stocks.
+The data includes text from posts and comments, along with metadata such as the number of upvotes, downvotes, and timestamps.
+The posts are filtered to focus on those mentioning specific stocks, such as "AAPL" (Apple), "TSLA" (Tesla), and others.
+Stock Data:
+
+Stock data (open, close, high, low, volume) is retrieved using the Yahoo Finance API.
+The data is processed to create a feature for each stock’s daily movement, labeled as Up or Down based on the daily closing price change.
+Machine Learning Model
+Model Training:
+
+Machine learning models such as Logistic Regression, Random Forest, and XGBoost are used to predict stock price movements (Up or Down).
+The features used for training include sentiment scores, the number of comments and upvotes, and historical stock data.
+Model Evaluation:
+
+The model’s performance is evaluated using metrics such as accuracy, precision, recall, and F1-score.
+Cross-validation is performed to ensure that the model generalizes well to unseen data.
+Feature Importance:
+
+Feature importance is analyzed to understand which factors (e.g., sentiment, number of comments, stock volume) are most influential in predicting stock movements.
+Data Visualization
+Sentiment Analysis Visualization:
+
+Word clouds are generated from positive and negative posts to show common words associated with each sentiment.
+Time series plots are created to visualize the correlation between daily stock prices and sentiment scores.
+Stock Price Movement vs. Sentiment:
+
+Correlation heatmaps and scatter plots are used to explore how sentiment scores relate to stock price movements.
+Visualize the trends in Reddit sentiment and compare them with real-world stock price changes.
+
+
 bash
 Copy code
 python predict_stock_movement.py --stock_symbol AAPL
