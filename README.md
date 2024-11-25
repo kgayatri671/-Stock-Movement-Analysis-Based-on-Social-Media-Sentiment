@@ -77,6 +77,15 @@ Stock Price Movement vs. Sentiment:
 Correlation heatmaps and scatter plots are used to explore how sentiment scores relate to stock price movements.
 Visualize the trends in Reddit sentiment and compare them with real-world stock price changes.
 
+Data Visualization
+Sentiment Analysis Visualization:
+
+Word clouds are generated from positive and negative posts to show common words associated with each sentiment.
+Time series plots are created to visualize the correlation between daily stock prices and sentiment scores.
+Stock Price Movement vs. Sentiment:
+
+Correlation heatmaps and scatter plots are used to explore how sentiment scores relate to stock price movements.
+Visualize the trends in Reddit sentiment and compare them with real-world stock price changes.
 
 bash
 Copy code
