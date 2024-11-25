@@ -87,8 +87,6 @@ Stock Price Movement vs. Sentiment:
 Correlation heatmaps and scatter plots are used to explore how sentiment scores relate to stock price movements.
 Visualize the trends in Reddit sentiment and compare them with real-world stock price changes.
 
-bash
-Copy code
 python predict_stock_movement.py --stock_symbol AAPL
 Example OutpuPredicted Stock Movement for AAPL: Up
 Accuracy: 85%
